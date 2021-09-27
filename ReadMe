@@ -1,0 +1,51 @@
+
+step to build project :
+1. goto build directory
+2. run below commands -
+   $cmake .. -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles"
+   $make all
+   $find . -executable -type f 
+
+   expected output, as below :
+   anas@ubuntu:~/Documents/BMW/testcmake/build$ find . -executable -type f
+   ./CMakeFiles/3.16.3/CompilerIdCXX/a.out
+   ./CMakeFiles/3.16.3/CMakeDetermineCompilerABI_CXX.bin
+   ./CMakeFiles/3.16.3/CompilerIdC/a.out
+   ./CMakeFiles/3.16.3/CMakeDetermineCompilerABI_C.bin
+   ./src/testcmake_run
+   ./tst/testcmake_tst
+   anas@ubuntu:~/Documents/BMW/testcmake/build$ 
+
+NOTE : below is folder structure for reference.
+
+anas@ubuntu:~/Documents/BMW$ tree -L 2 testcmake/
+testcmake/
+├── build
+│   ├── bin
+│   ├── CMakeCache.txt
+│   ├── CMakeFiles
+│   ├── cmake_install.cmake
+│   ├── lib
+│   ├── Makefile
+│   ├── src
+│   └── tst
+├── CMakeLists.txt
+├── CMakeLists.txt.user
+├── lib
+│   └── googletest
+├── src
+│   ├── CMakeLists.txt
+│   ├── DataAnalyzer.cpp
+│   ├── DataAnalyzer.h
+│   └── main.cpp
+└── tst
+    ├── CMakeLists.txt
+    ├── DataAnalyzertest.cpp
+    ├── googletest
+    └── main.cpp
+
+11 directories, 12 files
+anas@ubuntu:~/Documents/BMW$ 
+
+
+
