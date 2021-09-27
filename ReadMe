@@ -19,10 +19,31 @@ step to build project :
 3. USAGE :./src/testcmake_run <1 or 2> <"text block"
 4. binary to run UT :  ./tst/testcmake_tst
 
-NOTE : below is folder structure for reference.
+NOTE : below is folder structure for reference. [ Kindly add the two directories (LogFiles and build) manually ]
 
-anas@ubuntu:~/Documents/BMW$ tree -L 2 testcmake/
-testcmake/
+anas@ubuntu:~/Documents$ tree -L 3 bmw_git/
+bmw_git/
+├── LogFiles                              --------------> kindly add empty directory manually
+└── testcmake-main
+    ├── build                                 --------------> kindly add  empty directory manually
+    ├── CMakeLists.txt
+    ├── lib
+    │   └── googletest
+    ├── ReadMe
+    ├── src
+    │   ├── CMakeLists.txt
+    │   ├── DataAnalyzer.cpp
+    │   ├── DataAnalyzer.h
+    │   └── main.cpp
+    └── tst
+        ├── CMakeLists.txt
+        ├── DataAnalyzertest.cpp
+        └── main.cpp
+-------------------------------------------------------------------------------
+
+NOTE : folder structure after sucessful build
+
+testcmake-main/
 ├── build
 │   ├── bin
 │   ├── CMakeCache.txt
@@ -32,23 +53,6 @@ testcmake/
 │   ├── Makefile
 │   ├── src
 │   └── tst
-├── CMakeLists.txt
-├── CMakeLists.txt.user
-├── lib
-│   └── googletest
-├── src
-│   ├── CMakeLists.txt
-│   ├── DataAnalyzer.cpp
-│   ├── DataAnalyzer.h
-│   └── main.cpp
-└── tst
-    ├── CMakeLists.txt
-    ├── DataAnalyzertest.cpp
-    ├── googletest
-    └── main.cpp
-
-11 directories, 12 files
-anas@ubuntu:~/Documents/BMW$ 
 
 
 
