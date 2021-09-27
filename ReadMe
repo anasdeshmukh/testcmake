@@ -16,6 +16,9 @@ step to build project :
    ./tst/testcmake_tst
    anas@ubuntu:~/Documents/BMW/testcmake/build$ 
 
+3. USAGE :./src/testcmake_run <1 or 2> <"text block"
+4. binary to run UT :  ./tst/testcmake_tst
+
 NOTE : below is folder structure for reference.
 
 anas@ubuntu:~/Documents/BMW$ tree -L 2 testcmake/
